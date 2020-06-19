@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="challenge.CriptografiaCesarianaTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-06-19T15:27:30" hostname="hajadalaj-Inspiron-5547" time="0.007">
+  <properties/>
+  <testcase name="deveRetornarErroQuandoCriptografaTextoEhNulo" classname="challenge.CriptografiaCesarianaTest" time="0.0"/>
+  <testcase name="deveConverterCaracteresParaMinusculoNaDescriptografia" classname="challenge.CriptografiaCesarianaTest" time="0.0"/>
+  <testcase name="deveManterOsNumerosNaCriptografia" classname="challenge.CriptografiaCesarianaTest" time="0.001"/>
+  <testcase name="deveConverterCaracteresParaMinusculoNaCriptografia" classname="challenge.CriptografiaCesarianaTest" time="0.0"/>
+  <testcase name="deveManterOsNumerosNaDescriptografia" classname="challenge.CriptografiaCesarianaTest" time="0.0"/>
+  <testcase name="deveRetornarErroQuandoDesCriptografaTextoEhNulo" classname="challenge.CriptografiaCesarianaTest" time="0.001"/>
+  <testcase name="deveRetornarErroQuandoODesCriptografaTextoEhVazio" classname="challenge.CriptografiaCesarianaTest" time="0.0"/>
+  <testcase name="deveCriptografarTexto" classname="challenge.CriptografiaCesarianaTest" time="0.001"/>
+  <testcase name="deveRetornarErroQuandoOCriptografaTextoEhVazio" classname="challenge.CriptografiaCesarianaTest" time="0.0"/>
+  <testcase name="deveDescriptografarTexto" classname="challenge.CriptografiaCesarianaTest" time="0.0"/>
+  <system-out><![CDATA[aprender java gera felicidade
+vhmdp ehp ylqgrv dr dfhohud eudvlo 2019
+dsuhqghu mdyd jhud iholflgdgh
+sejam bem vindos ao acelera brasil 2019
+d oljhlud udsrvd pduurp vdowrx vreuh r fdfkruur fdqvdgr
+a ligeira raposa marrom saltou sobre o cachorro cansado
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

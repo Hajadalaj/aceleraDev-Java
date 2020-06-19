@@ -43,10 +43,10 @@ public class CriptografiaCesariana implements Criptografia {
     }
 
     private void ehVazioNulo(String texto){
-        if (texto.isEmpty()) {
-            throw new IllegalArgumentException();
-        }else if(texto.equals(null)){
+        if  (texto.equals(null)){ 
             throw new NullPointerException();
+        }else if(texto.isEmpty()){
+            throw new IllegalArgumentException();
         }
     }
 
