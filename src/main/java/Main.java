@@ -9,9 +9,9 @@ public class Main {
     public static void main(String[] args) {
         
         Estacionamento estacionamento = new Estacionamento();
-        Motorista ada = Motorista.builder().withNome("")
+        Motorista ada = Motorista.builder().withNome("Ada")
                 .withIdade(60)
-                .withPontos(-1)
+                .withPontos(20)
                 .withHabilitacao("1231")
                 .build();
 
@@ -40,7 +40,7 @@ public class Main {
         }
        
         System.out.println(estacionamento.carrosEstacionados()+"Total");
-        estacionamento.getEstacionamento().forEach((n) -> System.out.println(n.toString()));
+        System.out.println(estacionamento.toString());
         ;
       
     }

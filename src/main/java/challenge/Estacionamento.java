@@ -45,8 +45,8 @@ public class Estacionamento {
     @Override
     public String toString(){
         String msg = "";
-        for(int i = 0; i < this.estacionamento.size();i++){
-            msg = msg + this.estacionamento.get(i).getPlaca() + "| ";
+        for(Carro car:estacionamento){
+            msg = msg + car.getPlaca() + "| ";
         }
         return msg;
     }

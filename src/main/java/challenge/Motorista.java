@@ -13,8 +13,8 @@ public class Motorista {
     private final String habilitacao;
 
     private Motorista(String nome, int idade, int pontos, String habilitacao) {
-        if(nome == null){
-            throw new NullPointerException("Carro sem Motorista");
+        if(nome == null || nome.equalsIgnoreCase("")){
+            throw new NullPointerException("Motorista sem nome");
         }else if(habilitacao == null){
             throw new NullPointerException("Habilitação invalida");
         }else{
