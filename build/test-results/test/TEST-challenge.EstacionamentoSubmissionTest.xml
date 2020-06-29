@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="challenge.EstacionamentoSubmissionTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2020-06-28T05:49:30" hostname="hajadalaj-Inspiron-5547" time="0.012">
+<testsuite name="challenge.EstacionamentoSubmissionTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2020-06-29T15:37:17" hostname="hajadalaj-Inspiron-5547" time="0.016">
   <properties/>
-  <testcase name="naoDeveTerCarroAutonomo" classname="challenge.EstacionamentoSubmissionTest" time="0.001"/>
-  <testcase name="casoTodosSejamSeniorONovoMotoristaNaoTeraVaga" classname="challenge.EstacionamentoSubmissionTest" time="0.005"/>
+  <testcase name="naoDeveTerCarroAutonomo" classname="challenge.EstacionamentoSubmissionTest" time="0.002"/>
+  <testcase name="casoTodosSejamSeniorONovoMotoristaNaoTeraVaga" classname="challenge.EstacionamentoSubmissionTest" time="0.008"/>
   <testcase name="deveRetornarErroQuandoNaoTemCor" classname="challenge.EstacionamentoSubmissionTest" time="0.0"/>
   <testcase name="casoPrimeiroMotoristaSejaSeniorEleNaoDeveSair" classname="challenge.EstacionamentoSubmissionTest" time="0.001"/>
   <testcase name="naoDeveEstacionarMotoristaSemPontos" classname="challenge.EstacionamentoSubmissionTest" time="0.0"/>

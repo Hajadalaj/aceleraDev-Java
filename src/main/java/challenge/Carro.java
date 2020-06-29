@@ -63,7 +63,17 @@ public class Carro {
                 ", cor=" + cor +
                 '}';
     }
-
+    public void validador(){
+        if(this.getMotorista() == null){
+                throw new EstacionamentoException("naoDeveTerCarroAutonomo");
+            }
+        if(this.getMotorista().getIdade() < 18){
+                throw new EstacionamentoException("naoDeveTerMotoristaDeMenor");
+        }
+        if(this.getMotorista().getPontos() > 20){
+            throw new EstacionamentoException("naoDeveEstacionarMotoristaSemPontos");
+    }
+    }
     public static CarroBuilder builder() {
         return new CarroBuilder();
     }

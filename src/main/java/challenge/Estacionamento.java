@@ -15,7 +15,7 @@ public class Estacionamento {
     }
     
     public void estacionar(Carro carro) {
-        validador(carro);
+        carro.validador();
       if(carrosEstacionados() < 10){
         estacionamento.add(carro);
         System.out.println(carro.getPlaca());
@@ -49,18 +49,6 @@ public class Estacionamento {
             msg = msg + car.getPlaca() + "| ";
         }
         return msg;
-    }
-
-    private void validador(Carro carro){
-        if(carro.getMotorista() == null){
-                throw new EstacionamentoException("naoDeveTerCarroAutonomo");
-            }
-        if(carro.getMotorista().getIdade() < 18){
-                throw new EstacionamentoException("naoDeveTerMotoristaDeMenor");
-        }
-        if(carro.getMotorista().getPontos() > 20){
-            throw new EstacionamentoException("naoDeveEstacionarMotoristaSemPontos");
-    }
     }
 
 }
