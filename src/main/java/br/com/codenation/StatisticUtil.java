@@ -5,8 +5,8 @@ public class StatisticUtil {
 		public static int average(int[] elements) {
 			int avg = 0;
 			int sum = 0;
-			for (int i : elements) {
-				sum = sum + i;
+			for (int element : elements) {
+				sum += element;
 			}
 			avg = sum / elements.length;
 			return avg;
@@ -35,23 +35,18 @@ public class StatisticUtil {
 
 		public static int median(int[] elements) {
 			int index = 0;
-			int retorno = 0;
+			int response = 0;
 
-			int[] vAux = sort(elements);
-
-			for(int i = 0; i < vAux.length; i++){
-				System.out.println(vAux[i]);
-			}
-
+			sort(elements);
+			index = elements.length / 2;
+			
 			if(elements.length % 2 == 0){
-				index = elements.length / 2;
-				retorno = (elements[index] + elements[index - 1]) / 2;
+				response = (elements[index] + elements[index - 1]) / 2;
 			} else{
-				index = elements.length / 2;
-				retorno = elements[index];
+				response = elements[index];
 			}
 			
-			return retorno;
+			return response;
 		}
 
 		private static int[] sort(int[] elements){
