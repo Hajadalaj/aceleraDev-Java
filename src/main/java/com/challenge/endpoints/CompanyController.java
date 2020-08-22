@@ -22,19 +22,20 @@ public class CompanyController {
  private CompanyService companyService;
 
  @GetMapping("/{id}")
- public ResponseEntity<Company> findById(@PathVariable("id") long id) {
+ public ResponseEntity<Company> findById(@PathVariable("id") Long id) {
   return new ResponseEntity<Company>(this.companyService.findById(id)
-  .orElseThrow(() -> new ResourceNotFoundException("Compania")), HttpStatus.OK);
+  .orElseThrow(() -> new ResourceNotFoundException("Cia Não Existe")), HttpStatus.OK);
  }
 
- @GetMapping("/byAcceleration/{id}")
- public Iterable<Company> findByAccelerationId(@PathVariable("id") long id) {
-  return this.companyService.findByAccelerationId(id);
+ @GetMapping
+ public Iterable<Company> findAll(@PathParam("accelerationId") Long accelerationId,
+                                  @PathParam("userId") Long userId ) {
+  if (accelerationId != null) {
+   return this.companyService.findByAccelerationId(accelerationId);
+  } else if (userId != null) { 
+   return this.companyService.findByUserId(userId);
+  }
+  return null;
  }
 
- @GetMapping("/byUser/{id}")
- public Iterable<Company> findByUserId(@PathVariable("id") Long id) {
-  return this.companyService.findByUserId(id);
- }
- 
 }

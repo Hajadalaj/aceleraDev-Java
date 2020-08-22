@@ -27,15 +27,14 @@ public class UserController {
   .orElseThrow(() -> new ResourceNotFoundException("Usuario não cadastrado")),HttpStatus.OK);
  }
 
- @GetMapping("/ByAcceleration")
- public Iterable<User> findByAccelerationName(@PathParam("nome") String nome) {
-  return this.userService.findByAccelerationName(nome);
+ @GetMapping
+ public Iterable<User> findAll(@PathParam("accelerationName") String accelerationName,
+                               @PathParam("companyId") Long companyId) {
+  if (accelerationName != null) {
+   return this.userService.findByAccelerationName(accelerationName);
+  } else if (companyId != null) {
+   return this.userService.findByCompanyId(companyId);
+  }
+  return null;
  }
-
- @GetMapping("/ByCompany")
- public Iterable<User> findByCompanyId(@PathParam("companyId") Long companyId) {
-  return this.userService.findByCompanyId(companyId);
- }
-
- 
 }
