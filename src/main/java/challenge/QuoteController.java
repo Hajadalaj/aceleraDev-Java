@@ -1,15 +1,20 @@
 package challenge;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/v1/quote")
 public class QuoteController {
 
-	@Autowired
-	private QuoteService service;
+	private final QuoteService service;
 
+	public QuoteController(QuoteService service) {
+		this.service = service;
+	}
+	
 	@GetMapping
 	public Quote getQuote() {
 		return this.service.getQuote();

@@ -38,4 +38,13 @@ public class Quote {
 		this.quote = quote;
 	}
 
+	public Quote() {
+	}
+
+	public Quote(Integer id, String actor, String quote) {
+		this.id = id;
+		this.actor = actor;
+		this.quote = quote;
+	}
+
 }
